@@ -1,4 +1,5 @@
 import type { JokeComponentProps } from "../types/types";
+import "./JokeComponet.css"
 
 export const JokeComponent:React.FC<JokeComponentProps> = ({joke, increaseRate, decreaseRate, deleteHandler,editHandler}) => {
   return <div className="joke">
