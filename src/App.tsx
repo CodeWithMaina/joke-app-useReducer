@@ -88,7 +88,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="main-container">
       <h2>Jokes For You</h2>
       <div className="container">
         <form onSubmit={handleSubmit}>
@@ -130,7 +130,7 @@ function App() {
             />
           ))}
       </div>
-    </>
+    </div>
   );
 }
 
