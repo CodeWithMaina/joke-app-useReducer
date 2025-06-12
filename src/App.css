@@ -1,15 +1,19 @@
-/* App.css */
+/* Main App Styles */
 .main-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8f9fa;
 }
 
 .main-container h2 {
-  text-align: center;
   color: #2c3e50;
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -18,6 +22,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  width: 100%;
 }
 
 .container {
@@ -27,6 +32,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   border: 1px solid #e1e8ed;
+  width: 100%;
+  max-width: 600px;
 }
 
 .container form {
@@ -34,6 +41,7 @@
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container input[type="text"] {
@@ -50,11 +58,13 @@
 .container input[type="text"]:focus {
   outline: none;
   border-color: #667eea;
+  color: #000;
   background-color: white;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-.container button[type="submit"] {
+.container button[type="submit"],
+.container button[type="button"] {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
@@ -68,30 +78,19 @@
   letter-spacing: 0.5px;
 }
 
-.container button[type="submit"]:hover {
+.container button[type="submit"]:hover,
+.container button[type="button"]:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 15px rgba(102, 126, 234, 0.3);
 }
 
-.container button[type="submit"]:active {
-  transform: translateY(0);
-}
-
 .container button[type="button"] {
   background: #6c757d;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
   margin-left: 10px;
 }
 
 .container button[type="button"]:hover {
   background: #5a6268;
-  transform: translateY(-1px);
 }
 
 .jokes-container {
@@ -99,6 +98,7 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  width: 100%;
 }
 
 /* Responsive design */
@@ -136,4 +136,8 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
